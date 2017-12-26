@@ -1,0 +1,87 @@
+.login{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .boxAlert{
+        width: 400px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 0;
+        h3{
+            color: #000;
+            line-height: 0;
+            padding-left: 10%;
+        }
+        div{
+            position: relative;
+            width: 80%;
+            margin: 30px auto;
+            .position{
+                height: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto;
+                z-index: 1;
+                transition: all .3s linear;
+            }
+            .selectedSuccess{
+                background: #398ee9;
+                width: 0;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                z-index: 3;
+                transition: all .3s linear;
+            }
+            .selectedError{
+                background: #f00;
+                width: 0;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                z-index: 3;
+                transition: all .3s linear;
+            }
+            .selected{
+                width: 100%;
+            }
+            .blured{
+                top: -40px;
+                font-size: 12px;
+            }
+            input{
+                width: 100%;
+                height: 40px;
+                border: none;
+                outline: none;
+                background: none;
+                border-bottom: 2px solid #ccc;
+                position: relative;
+                z-index: 2;
+            }
+        }
+        button{
+            width: 80%;
+            height: 50px;
+            background: #398ee9;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            color: #fff;
+            outline: none;
+            border-radius: 5px;
+        }
+    }
+}
